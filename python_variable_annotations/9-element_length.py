@@ -1,21 +1,10 @@
 #!/usr/bin/env python3
-
-
-"""
-import Iterable, Sequence, List and Tuple from typing
-define function element_lenght
-"""
-
-
-from typing import Iterable, Sequence, List, Tuple
+""" Let's duck type an iterable object"""
+from typing import Sequence, Iterable, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """
-    function ellement_length
-    paramesters
-        lst: list
-    returns a list
-    """
-
+    """ Element length """
     return [(i, len(i)) for i in lst]
+
+# ...
